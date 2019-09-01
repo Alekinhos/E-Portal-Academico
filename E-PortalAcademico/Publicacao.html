@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>E-Portal Academico</title>
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">
+ 
+
+</head>
+
+
+<body>
+<!--INICIO MENU-->
+<nav class="navbar fixed-top navbar-expand-lg fixed-top" style="background-image: url(img/banner.png) ">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="IMG/marca.png" ></a>
+    
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="img/iconfinder_menu-alt_134216.png">
+      </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html"> 
+                <img src="img/home.png" width="30" height="30"data-toggle="tooltip" data-placement="top" title="Inicio">                 
+                 </a>
+            </li>
+       <!-- <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Avaliação</a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="avaliacao.html">Cadastrar</a>
+               <a class="dropdown-item" href="removeavaliacao.html">Remover</a>
+         
+   
+  </div>
+-->
+</li>
+<li class="nav-item">
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cadastro</a>
+   <div class="dropdown-menu">
+     <a class="dropdown-item" href="avaliacao.html">Avaliacão</a>
+     <a class="dropdown-item" href="questao.html">Questão</a>
+     <a class="dropdown-item" href="cadastroopcao.html">Opção</a>
+
+
+</div>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Publicacao.html"data-toggle="tooltip" data-placement="top" title="Publicaçoes">Publicações</a>
+        </li>
+       
+        <li class="nav-item dropdown">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--FIM MENU-->
+
+<!-- Page Content -->
+
+<div class="card text-center">
+   
+    
+   
+    
+    </div>
+  </div>
+  <div>
+    <hr>
+ 
+  </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+       
+      </div>
+      <div class="col-lg-12 mb-12">
+         
+        <div class="card h-100">
+            <div class="col text-center"> 
+         
+        </div>
+          <div class="card-body">
+              <label for="exampleInputEmail1">Selecione uma disciplina</label>
+            <form>
+                <select class="form-control form-control-sm">                  
+                        <option>Disciplina-1</option>
+                        <option>Disciplina-2</option>
+                        <option>Disciplina-3</option>
+                        <option>Disciplina-4</option>
+                        <option>Disciplina-5</option>
+                      </select>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Selecione a matéria</label>
+                <select class="form-control form-control-sm">                  
+                    <option>Matéria-1</option>
+                    <option>Matéria-2</option>
+                    <option>Matéria-3</option>
+                    <option>Matéria-4</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  
+                <label for="exampleInputPassword1">Selecione a prova</label>
+                <select class="form-control form-control-sm">                  
+                    <option>Prova-1</option>
+                    <option>Prova-2</option>
+                    <option>Prova-3</option>
+                  </select>
+              </div>
+                  <div class="container"> 
+                      <div class="row">
+                            <div class="col" id="exampleTitle">
+                                <label for="exampleInputPassword1">Selecione o valor as turmas a data e o horário para publicar a prova</label>
+                                <select class="form-control form-control-sm" id="turma">                  
+                                    <option>UNIDADE CONTAGEM - TURMA 09 MANHA 84658</option>
+                                    <option>UNIDADE BETIM - TURMA 05 MANHA 74658</option>
+                                    <option>UNIDADE VENDA NOVA - TURMA 08 TARDE 37958</option>
+                                    <option>UNIDADE CONTAGEM - TURMA 10 NOITE 85658</option>
+                                  </select>
+                              </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">                  
+                              <label for="exampleInputPassword1">Data inicio</label>
+                              <input type="date" class="form-control" id="data_ini" >
+                            </div>
+                          <div class="col">
+                              <label for="exampleInputPassword1">Data fim</label>
+                              <input type="date" class="form-control" id="data_fim" >
+                          </div>
+                          <div class="col">
+                
+                              <label for="exampleInputPassword1">Valor</label>
+                              <input type="number" class="form-control" id="valor" >
+                          </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col text-center">
+                          <button type="button" id="salvar" class="btn btn-info">Salvar</button>
+                        </div>
+                      </div>
+              <br>
+              </div>
+              <div id="resultado">
+                
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-info">Publicar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+  
+
+    <hr>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    var turma = "";
+    var data_ini = "";
+    var data_fim = "";
+    var valor = "";
+      $(document).ready(function(){
+        $('#salvar').click(function(){
+          function turma_ref(){
+          $("#resultado").append('<div class="container>' +
+                         '<div class="row" id="Turma_reg">'+
+                '<p>'+turma+'</p>'+
+                '</div>'+
+                '<div class="row">'+
+                  '<div class="col" id="dados">'+
+                    '<p>'+data_ini+'</p>'+
+                    '<p>'+data_fim+'</p>'+
+                    '<p>'+valor+'</p>'+
+                  '</div>'+
+                '</div>'+
+              '</div>');
+        };
+         $("#turma option:selected").each(function(){
+            turma = $(this).val();
+          });
+          $('#data_ini').each(function(){
+            data_ini = $(this).val();
+          });
+          
+          $('#data_fim').each(function(){
+            data_fim = $(this).val();
+          });
+          $('#valor').each(function(){
+            valor = $(this).val();
+          });
+          turma_ref();
+        });
+      });
+      </script>
+</body>
+ <footer class="py-5" style="background-image: url(img/banner.png) ">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; E-Portal Acadêmico 2019</p>
+    </div>
+  </footer>
+    <!-- /.container -->
+  </footer>
+</html>

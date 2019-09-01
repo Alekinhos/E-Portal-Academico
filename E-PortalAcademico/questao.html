@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>E-Portal Academico</title>
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  
+
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg fixed-top" style="background-image: url(img/banner.png) ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="IMG/marca.png" ></a>
+          
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="img/iconfinder_menu-alt_134216.png">
+            </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> 
+                      <img src="img/home.png" width="30" height="30"data-toggle="tooltip" data-placement="top" title="Inicio">                 
+                       </a>
+                  </li>
+             <!-- <li class="nav-item">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Avaliação</a>
+                   <div class="dropdown-menu">
+                     <a class="dropdown-item" href="avaliacao.html">Cadastrar</a>
+                     <a class="dropdown-item" href="removeavaliacao.html">Remover</a>
+               
+         
+        </div>
+      -->
+	</li>
+	<li class="nav-item">
+	  <li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cadastro</a>
+	   <div class="dropdown-menu">
+		 <a class="dropdown-item" href="avaliacao.html">Avaliacão</a>
+		 <a class="dropdown-item" href="questao.html">Questão</a>
+		 <a class="dropdown-item" href="cadastroopcao.html">Opção</a>
+   
+
+</div>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Publicacao.html"data-toggle="tooltip" data-placement="top" title="Publicaçoes">Publicações</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+	</header>
+
+
+<!-- Page Content -->
+
+<div class="card text-center">
+		<div class="card-header">
+		  Featured
+	   
+		
+		</div>
+	  </div>
+	  <div>
+		<hr>
+	 
+	  </div>
+	  <div class="container">
+	
+		<div class="row">
+		  <div class="col-lg-4 mb-4">
+		   
+		  </div>
+		  <div class="col-lg-12 mb-12">
+			 
+			<div class="card h-100">
+				<div class="col text-center"> 
+			 
+			</div>
+			  <div class="card-body">
+				  <label for="exampleInputEmail1">Selecione a avaliação</label>
+				<form>
+					<select class="form-control form-control-sm">                  
+							<option>Avaliação-1</option>
+							<option>Avaliação-2</option>
+							<option>Avaliação-3</option>
+							<option>Avaliação-4</option>
+							<option>Avaliação-5</option>
+							@gabi              </select>
+				  <div class="form-group">
+					<label for="exampleInputEmail1">Informe o tipo de questão</label>
+					<select class="form-control form-control-sm">                  
+						<option>Multipla Escolha</option>
+						<option>Verdadeiro ou falso</option>
+					  </select>
+				  </div>
+						<div class="form-group">
+							<div class="container"> 
+								<div class="row">
+										<label for="titulo">Titulo da questão</label>
+										<input type="text" class="form-control" id="titulo" >
+								</div>
+								<div class="row">		
+										<label for="titulo">Enunciado da questão</label>
+										<input type="input-group-text" class="form-control" id="titulo" >
+									</div>
+								</div>
+								<br>
+						<br>
+						</div>
+					</div>
+				  <div id="resultado">
+					
+				  </div>
+				  <div class="col text-center">
+					<button type="button" id="salvar" class="btn btn-info">Salvar</button>
+				  </div>
+				  <div id="dialog-confirm" title="Empty the recycle bin?">
+						
+					  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+			
+			  </div>
+			</div>
+		  </div>
+		</div>
+	
+		
+	
+	
+	  
+	
+		<hr>
+	
+	  <!-- Bootstrap core JavaScript -->
+	  <script src="vendor/jquery/jquery.min.js"></script>
+	  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	  <script src="js/script.js"></script>
+	  <script>
+		var turma = "";
+		var data_ini = "";
+		var data_fim = "";
+		var valor = "";
+		  $(document).ready(function(){
+			
+				
+			$("#salvar").click(function(){
+				alert($(function dialogo() {
+				$( "#dialog-confirm" ).dialog({
+					resizable: false,
+					height:140,
+					modal: true,
+					buttons: {
+					"Deseja cadastrar outra questão?": function() {
+						$( this ).dialog( "close" );
+					},
+					Cancel: function() {
+						$( this ).dialog( "close" );
+					}
+					}
+					})}));
+			});
+			
+		  });
+		  </script>
+	</body>
+	<!-- Footer -->
+	<footer class="py-5 bg-dark">
+	  <div class="container">
+		<p class="m-0 text-center text-white">Copyright &copy; E-Portal Acadêmico 2019</p>
+	  </div>
+	  <!-- /.container -->
+	</footer>
+	</html>
+	
